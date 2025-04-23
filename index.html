@@ -11,20 +11,23 @@
     <div class="calculator">
       <div class="container">
         <div class="calculator">
-          <div class="calculations js-calcs"></div>
+          <textarea
+            type="text"
+            readonly
+            class="calculations js-calcs"
+          ></textarea>
           <div class="display">
             <input
               type="text"
               id="result"
               class="result js-result"
               placeholder="000000000"
-              maxlength="21"
               readonly
             />
           </div>
           <div class="buttons">
             <button class="btn js-c">C</button>
-            <button class="btn js-operator">%</button>
+            <button class="btn js-percentage">%</button>
             <button class="btn js-inv">inv</button>
             <button class="operator js-plus">+</button>
             <button class="btn js-7 js-number">7</button>
@@ -41,12 +44,13 @@
             <button class="operator js-minus">-</button>
             <button class="btn js-dot">.</button>
             <button class="btn js-0 js-number">0</button>
-            <button class="btn js-plus-minus">+/-</button>
+            <button class="btn js-negative">+/-</button>
             <button class="equal-sign js-equal">=</button>
           </div>
         </div>
       </div>
     </div>
-    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/app.js"></script>
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
